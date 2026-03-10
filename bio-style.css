@@ -828,8 +828,24 @@ body {
     height: 150px;
   }
 
+  .avatar-glow {
+    inset: -15px;
+  }
+
+  .avatar-ring {
+    inset: -12px;
+  }
+
   .name {
     font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .bio-text {
+    font-size: 0.95rem;
   }
 
   .section-title {
@@ -838,14 +854,24 @@ body {
 
   .profile-stats {
     gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
   }
 
   .interests-grid {
     grid-template-columns: 1fr;
   }
 
+  .interest-card {
+    padding: 2rem 1.5rem;
+  }
+
   .link-card {
     padding: 1.5rem;
+    gap: 1rem;
   }
 
   .link-icon {
@@ -856,6 +882,10 @@ body {
   .link-content h3 {
     font-size: 1rem;
   }
+
+  .link-content p {
+    font-size: 0.85rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -864,22 +894,165 @@ body {
   }
 
   .navbar {
-    padding: 1rem 0;
+    padding: 0.8rem 0;
   }
 
   .nav-container {
     padding: 0 1rem;
   }
 
+  .nav-logo {
+    font-size: 1.1rem;
+  }
+
   .nav-links {
     display: none;
   }
 
+  .profile-section {
+    margin-top: 4.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .avatar-wrapper {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1.5rem;
+  }
+
+  .avatar-glow {
+    inset: -15px;
+  }
+
+  .avatar-ring {
+    inset: -10px;
+  }
+
   .name {
     font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .tagline {
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .bio-text {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  .bio-text p {
+    line-height: 1.6;
+  }
+
+  .profile-stats {
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-value {
+    font-size: 1.3rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    margin-top: 0.3rem;
   }
 
   .section-title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .interests-section {
+    padding: 3rem 0;
+  }
+
+  .interests-grid {
+    gap: 1.2rem;
+  }
+
+  .interest-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .interest-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .interest-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .interest-card p {
+    font-size: 0.85rem;
+  }
+
+  .links-section {
+    padding: 3rem 0 2rem;
+  }
+
+  .links-container {
+    gap: 1rem;
+  }
+
+  .link-card {
+    padding: 1.2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .link-icon {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+  }
+
+  .link-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .link-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .link-content h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+    word-break: break-word;
+  }
+
+  .link-content p {
+    font-size: 0.8rem;
+  }
+
+  .link-arrow {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  .footer {
+    padding: 2rem 0;
+    font-size: 0.8rem;
+  }
+
+  /* Hide hover effects on mobile */
+  .link-card:active {
+    transform: translateX(5px);
+  }
+
+  .interest-card:active {
+    transform: translateY(-5px);
   }
 }
